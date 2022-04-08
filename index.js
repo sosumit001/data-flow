@@ -1,7 +1,10 @@
 
 window.onload=()=>{
+    let navContainer = document.querySelector('#container')
     let navIcon = document.querySelector('#nav-icon');
     let navList = document.querySelector('#nav-list');
+    let compImg = document.querySelector('#comp-img');
+
     let bool = true;
     
     //onclick property on nav button
@@ -21,6 +24,14 @@ window.onload=()=>{
             navList.style = "height:0; opacity:0";
             bool = true;
         }
+    })
+
+    //onscroll properties
+    window.addEventListener('scroll',()=>{
+        let angle = Math.floor(1)*window.pageYOffset;
+        console.log(angle);
+        compImg.style.setProperty('--angle',angle + "deg");
+        
     })
 
 }
