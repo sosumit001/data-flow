@@ -1,25 +1,26 @@
-
+import Webcontent from "./source/content.js";
 window.onload=()=>{
     let navContainer = document.querySelector('#container')
+    let bodyContent = document.querySelector('#content');
     let navIcon = document.querySelector('#nav-icon');
     let navList = document.querySelector('#nav-list');
     let compImg = document.querySelector('#comp-img');
+    //comp ArchiTechTure
+    let compArchi = document.querySelector('#comp-archi')
 
     let bool = true;
-    
+   
     //onclick property on nav button
-    let navContent = `<i class="fa-solid fa-xmark"></i>`;
-    let navPreContent = `<i class="fa-solid fa-angles-right">`;
     navIcon.addEventListener('click',()=>{
         if(bool)
         {
-            navIcon.innerHTML = navContent;
+            navIcon.innerHTML = Webcontent.navContent;
             navList.style.cssText = "height:7rem;opacity:1"
             navIcon.style = "background-color:rgb(255, 174, 0);"
             bool = false;
         }
         else{
-            navIcon.innerHTML = navPreContent;
+            navIcon.innerHTML = Webcontent.navPreContent;
             navIcon.style = "background-color:yellow"
             navList.style = "height:0; opacity:0";
             bool = true;
@@ -29,9 +30,18 @@ window.onload=()=>{
     //onscroll properties
     window.addEventListener('scroll',()=>{
         let angle = Math.floor(1)*window.pageYOffset;
-        console.log(angle);
         compImg.style.setProperty('--angle',angle + "deg");
         
     })
-
+    //ArchiTechPage 
+    compArchi.addEventListener('click',()=>{
+        //import compArchi from webcontent 
+        bodyContent.innerHTML =Webcontent.compArchi;
+        let cpucont = document.querySelector('#cpu-svg');
+        cpucont.style = "width:90%;"
+        navIcon.innerHTML = Webcontent.navPreContent;
+        navIcon.style = "background-color:yellow"
+        navList.style = "height:0; opacity:0";
+        bool = true;
+    })
 }
