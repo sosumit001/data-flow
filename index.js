@@ -1,6 +1,6 @@
 import Webcontent from "./source/content.js";
 window.onload=()=>{
- 
+    let body = document.querySelector('body');
     let navContainer = document.querySelector('#container')
     let bodyContent = document.querySelector('#content');
     let navIcon = document.querySelector('#nav-icon');
@@ -40,6 +40,10 @@ window.onload=()=>{
         bodyContent.innerHTML =Webcontent.compArchi;
         let cpucont = document.querySelector('#cpu-svg');
         navIcon.innerHTML = Webcontent.navPreContent;
+        let leftRightSwip = document.createElement('div');
+        leftRightSwip.setAttribute("id","right-left-swip");
+        leftRightSwip.innerHTML = Webcontent.rightLeftSwip;
+        body.appendChild(leftRightSwip);
         navIcon.style = "background-color:yellow"
         navList.style = "height:0; opacity:0";
         bool = true;

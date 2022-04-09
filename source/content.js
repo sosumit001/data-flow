@@ -15,6 +15,10 @@ const Webcontent = {
        run
   </div>
   </div>
- `
+  ` ,
+    rightLeftSwip: `
+    <div id="left-swip"><i class="fa-solid fa-arrow-right"></i></div>
+    <div id="right-swip"><i class="fa-solid fa-arrow-right"></i></div>
+  `
 }
 export default Webcontent;
