@@ -6,14 +6,15 @@ const Webcontent = {
     navPreContent : `<i class="fa-solid fa-angles-right"></i>`,
     navContent : `<i class="fa-solid fa-xmark"></i>`,
     navIconAf  : `<i class="fa-solid fa-xmark"></i>`,
-    compArchi  : `  <div id="cpu-svg">
+    compArchi  : `      <div id="cpu-svg">
     <object id="cpu-object" height="300px" type="image/svg+xml" data="stuff/cpuSvg.svg">
       <!-- Your fall back here -->
       <img src="image.svg" />
    </object>
-   <div id="cpusvg-title">
-       Cpu Scheduling
-   </div>
-  </div>`
+   <div class="btn" id="cpusvg-title">
+       run
+  </div>
+  </div>
+ `
 }
 export default Webcontent;
