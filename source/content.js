@@ -11,9 +11,9 @@ const Webcontent = {
       <!-- Your fall back here -->
       <img src="image.svg" />
    </object>
-   <div class = "btn" id="cpusvg-title">
+   <a href="simulator.html" target="_blank" class = "btn" id="cpusvg-title">
        run
-  </div>
+  </a>
   </div>
   ` ,
     rightLeftSwip: `
