@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="text/css" href="./materialize-v1.0.0/css/materialize.min.css">
+</head>
+<body id="fcfs-body">
+    <div id="simu-container">
+      <div id="fcfs-scheduling">Cpu Scheduling</div>
+      <div id="fcfs-container">
+        <div class="fcfs-input">
+            <span>Brust Time</span>
+            <input type="number" name="BrustValye" id="fcfs-time-1">
+        </div>
+        <div class="fcfs-input">
+          <span>Arriv. Time</span>
+          <input type="number" name="Arriv. value" id="fcfs-time-2">
+      </div>
+      <span id = "fcfs-add">Add</span>
+      </div>
+      <div id = "fcfs-table">
+        <table class="responsive-table" id="simu-table">
+            <thead>
+              <tr>
+                  <th>Process</th>
+                  <th>BT</th>
+                  <th>AT</th>
+              </tr>
+            </thead>
+    
+            <tbody>
+           
+            </tbody>
+          </table>
+          <div id="fcfs-run">Run</div>
+    </div>
+    <div id="fsfc-gannt-chart">
+      <h1>Gannt chart</h1>
+      <div id="fcfs-block-container">
+        
+      </div>
+    </div>
+</div>
+    <script src="simulator/cpu-sche/simulator.js"></script>
+    <script src="./materialize-v1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
