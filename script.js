@@ -8,11 +8,11 @@ function init(){
     var dsPage = document.querySelector("#ds-page");
     Button.leftBtn.addEventListener('click',()=>{
        if(bool){
-        dsPage.style.cssText = 'left:0%;'
+        dsPage.style.cssText = 'right:0%; width:100%;'
         bool = false;
        }
        else{
-           dsPage.style = 'left:100%';
+           dsPage.style = 'right:-100%; width:0%;';
            bool = true;
        }
     })
