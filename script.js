@@ -8,7 +8,7 @@ function init(){
     var dsPage = document.querySelector("#ds-page");
     Button.leftBtn.addEventListener('click',()=>{
        if(bool){
-        dsPage.style.cssText = 'right:0%; width:100%;'
+        dsPage.style.cssText = 'right:0%;  width:100%;'
         bool = false;
        }
        else{
