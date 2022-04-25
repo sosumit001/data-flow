@@ -5,17 +5,21 @@ function init(){
     var Button = {
         leftBtn :document.querySelector('#left-right-btn .second') ,
     }
-    var dsPage = document.querySelector("#ds-page");
+
+     var dsPage = document.querySelector('#ds-page');
+ 
     Button.leftBtn.addEventListener('click',()=>{
        if(bool){
-        dsPage.style.cssText = 'right:0%;  width:100%;'
+        dsPage.style = 'right:0%;  width:100%;'
         bool = false;
+        console.log("aasd");
        }
        else{
            dsPage.style = 'right:-100%; width:0%;';
            bool = true;
        }
     })
+   console.log("adsfafd")
 }
 
 init();
