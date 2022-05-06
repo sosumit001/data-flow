@@ -1,0 +1,212 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    position: relative;
+    height: 100vh;
+    background-color:rgba(7, 7, 7, 0.507);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Cg fill='%239C92AC' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M0 0h4v4H0V0zm4 4h4v4H4V4z'/%3E%3C/g%3E%3C/svg%3E");
+
+}
+/* nav bar */
+#nav-bar{
+    width: 30px;
+    background-color:  #4A4646;
+    color: aliceblue;
+    text-align: center;
+    margin-top: 10px;
+   left:2.5%;
+    padding: 5px;
+    cursor: pointer;
+    position: absolute;
+    overflow-y: hidden;
+    z-index: 18;
+   border: 0.5px solid rgba(245, 245, 245, 0.699);
+   border-radius: 2px;
+}
+#nav-bar:before{
+    content: "";
+    width: 100%;
+    height: 96%;
+    background-color:rgba(239, 240, 232);
+    box-shadow: 2px 2px 2px black;
+    position: absolute;
+    top:100%;
+    left: 0;
+    transition: 0.5s;
+}
+#nav-bar:hover{
+    color:black;
+    border:none;
+    border: 1px solid black;
+}
+#nav-bar:hover::before{
+   top:5%;
+   left: -5%;
+   color:black;
+   z-index: -1;
+}
+#ds-container{
+    margin-top: 2.5%;
+    position: absolute;
+    height: 90%;
+    width:95%;
+    left:2.5%;
+    top:4.5%;
+}
+/* ds search options */
+#ds-src-options{
+    position: absolute;
+    top:1.4%;
+    width: 30%;
+    display: flex;
+    padding-left: 10px;
+    align-items: center;
+    right:2.5%;
+    height: 30px;
+}
+#ds-src-options input{
+    width: 82%;
+    outline: none;
+    border: none;
+    background-color: #4A4646;
+    height: 100%;
+    color:whitesmoke;
+}
+#ds-src-options span{
+    cursor: pointer;
+    width: 18%;
+    margin-left: 10px;
+}
+#ds-src-options input:hover{
+    border: 2px solid rgb(52, 42, 61);
+    background-color: whitesmoke;
+    color:black;
+}
+#ds-array-container{
+    position: absolute;
+    top:0.5%;
+    left: 1%;
+    width: 98%;
+    height: 98%;
+    background-color: black;
+   
+}
+#array-simu{
+    position: absolute;
+    top:20%;
+    height: 50%;
+    background-color: rgb(25, 27, 27);
+    left: 10%;;
+}
+object{
+    width: 100%;
+    height: 100%;
+}
+#ds-array-play{
+    position: absolute;
+    top:92%;
+    left: 80%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(77, 74, 76);
+    border-inline: 1px solid rgb(92, 84, 84);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fa-laptop-code{
+    color:rgb(179, 172, 159);
+    cursor: pointer;
+}
+#ds-animation-display{
+    margin-top: -1.0%;
+    position: absolute;
+    height: 95%;
+    width:95%;
+    left:2.5%;
+    top:4.5%;
+    background-color: rgba(245, 245, 245, 0.164);
+}
+
+/* ds simulator animation */
+.display-bar{
+    position: absolute;
+    width: 80%;
+    height: 50vh;
+    left:10%;
+    top:10%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: black;
+  
+}
+.a-bar{
+    width: 20px;
+    margin-bottom: 0;
+    background-color:orange;
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#ds-animation-display{
+    transform: scale(1);
+    position: absolute;
+    top:0%;
+    left:0%;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(230, 230, 230);
+    margin: 0;
+    display: none;
+}
+/* add create button */
+
+#add-sort{
+    top:80%;
+    position: absolute;
+    width: 20%;
+    height: 60px;
+    display: flex;
+}
+
+#add-sort-gen{
+    height: 100%;
+    width: 30px;
+    background-color: rgb(88, 83, 83);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#add-sort-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    justify-content:center;
+    width: 80%;
+    justify-content: space-around;
+    
+}
+.array-btn{
+    outline: none;
+    border: none;
+    height: 0%;
+    cursor:pointer;
+    background-color:orange;
+ 
+}
+.fa-chevron-right{
+    color:rgba(245, 245, 245, 0.582);
+    cursor: pointer;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 40%;
+    padding-bottom: 40%;
+}

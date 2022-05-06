@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin:  0;
+}
+body{
+    background-color:whitesmoke;
+    height: 100vh;
+    position: relative;
+}
+#editor{
+    top:10%;
+    position: absolute;
+    height: 80%;
+    background-color: whitesmoke;
+    width: 60%;
+    left: 20%;
+    position: relative;
+}
+#editor-display{
+    height: 60%;
+}
+#editor-console{
+    background-color: black;
+    height: 40%;
+}
+#lang-options{
+    padding: 3px;
+    position: absolute;
+    width: 13%;
+    top:-25px;
+    left: 85%;
+    justify-content: center;
+    z-index: 7;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    justify-content: space-around;
+   
+}
+#lang-drop{
+    color: rgb(48, 43, 43);
+    cursor: pointer;
+    
+}
+#lang-list{
+    /* display: none; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    color: rgb(255, 255, 255);
+    background-color: rgb(22, 21, 21);
+    text-align: center;
+    
+}
